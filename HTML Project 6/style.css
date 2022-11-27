@@ -1,0 +1,25 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    color: #000000;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Border Collapse is used to collapse the borders of the table into a single border. */
