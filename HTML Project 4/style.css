@@ -6,6 +6,7 @@ table {
     font-family: monospace;
     font-size: 25px;
     text-align: left;
+    margin: 0%;
 }
 
 th, td {
@@ -16,3 +17,5 @@ th, td {
     padding-left: 30px;
     padding-right: 40px;
 }
+
+/* Border Collapse is used to collapse the borders of the table into a single border. */
