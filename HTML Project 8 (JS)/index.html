@@ -112,24 +112,37 @@
         let name1 = prompt("Enter your name");
         console.log("Your name is " + name1);
 
-        // Confirm Exit in JavaScript
-        let exit = confirm("Do you want to exit?");
-        if (exit){
-            window.close();
-            console.log("You have exited");
-        }
-        else {
-            console.log("You have not exited");
+        // Loops in JavaScript
+        // For Loop
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
         }
 
-        // Reload Confirmation in JavaScript
-        let reload = confirm("Do you want to reload?");
-        if (reload){
-            location.reload();
-            console.log("You have reloaded");
+        // Printing 10 to 1 using for loop
+        for (let i = 0; i < 10; i++) {
+            console.log(10 - i);
         }
-        else {
-            console.log("You have not reloaded");
+
+        // Array in JavaScript (Collection of elements)
+        let arr = [10, 20, 30, 40, 50];
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        for(let i=0; i<arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        // For Each Loop
+        arr.forEach(function(element) {
+            console.log(element);
+        });
+
+        // While Loop
+        let m = 0;
+        while (m < 10) {
+            console.log(m);
+            m++;
         }
 
     </script>
