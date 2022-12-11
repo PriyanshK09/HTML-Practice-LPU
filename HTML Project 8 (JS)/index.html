@@ -112,6 +112,26 @@
         let name1 = prompt("Enter your name");
         console.log("Your name is " + name1);
 
+        // Confirm Exit in JavaScript
+        let exit = confirm("Do you want to exit?");
+        if (exit){
+            window.close();
+            console.log("You have exited");
+        }
+        else {
+            console.log("You have not exited");
+        }
+
+        // Reload Confirmation in JavaScript
+        let reload = confirm("Do you want to reload?");
+        if (reload){
+            location.reload();
+            console.log("You have reloaded");
+        }
+        else {
+            console.log("You have not reloaded");
+        }
+
     </script>
 </body>
 </html>
