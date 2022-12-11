@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Intro to Javascript</h2>
+    <script>
+        console.log("Hello World");
+
+        // Variables
+        // var name = "John"; (Name is a variable)
+        // var age = 25; (Age is a variable)
+        // var is used in older version of JavaScript
+        // let is used in newer version of JavaScript
+        
+        let name = "John";
+        let age = 25;
+
+        console.log("Value of name is " + name);
+        console.log("Value of age is " + age);
+
+        // Operators
+
+        // Arithmetic Operators
+        // +, -, *, /, %, ++, --
+        let num1 = 10;
+        let num2 = 20;
+        let sum = num1 + num2;
+        console.log("Sum is " + sum);
+        
+        // Assignment Operators
+        // =, +=, -=, *=, /=, %=
+        let a = 10;
+        let b = 20;
+        a = -a;
+        b = -b;
+        console.log("Value of a is " + a);
+        console.log("Value of b is " + b);
+
+        // Comparison Operators
+        // ==, ===, !=, !==, >, <, >=, <=
+        let c = 10;
+        let d = 20;
+        console.log(c == d);
+        console.log(c != d);
+        console.log(c > d);
+
+        // Logical Operators
+        // &&, ||, !
+        let e = 10;
+        let f = 20;
+        console.log(e == 10 && f == 20); // && is used for and operator
+        console.log(e == 10 || f == 20); // || is used for or operator
+
+        // Conditional Statements
+        // if, if-else, if-else-if, switch
+        let g = 10;
+        let h = 20;
+        if (g == 10) {
+            console.log("Value of g is 10");
+        }
+
+        // Placeholders in JavaScript
+        // {} - Curly Braces (Block)
+        let ab = 10;
+        let bc = "John";
+        let temp = "My name is : ${bc} and my age is : ${ab}";
+        console.log(temp);
+
+        // Length of a String
+        let str = "Hello World";
+        console.log(str.length); // Length of the string
+        console.log(str.link("https://www.google.com/")); // Link the string to a website
+        console.log(str.slice(0, 5)); // Slice the string from 0 to 5
+        console.log(str.replace("Hello", "Hi")); // Replace Hello with Hi
+
+        let str1 = "     Hello      ";
+        console.log(str1.trim()); // Trim the spaces from the string
+
+        // If Else Statement in JavaScript
+        let i = 10;
+        let j = 20;
+        if (i == 10) {
+            console.log("Value of i is 10");
+        } 
+        else if (i == 20) {
+            console.log("Value of i is 20");
+        }
+        else {
+            console.log("Value of i is not 10");
+        }
+
+        // Switch Statement in JavaScript (SWITCH CASE)
+        let k = 10;
+        switch (k) {
+            case 10:
+                console.log("Value of k is 10");
+                break;
+            case 20:
+                console.log("Value of k is 20");
+                break;
+        }
+
+    </script>
+</body>
+</html>
