@@ -52,7 +52,70 @@
         }
     </script>
 
-    <!--  -->
+    <!-- Drop Down Menu -->
+    <div class="dropdown">
+        <center>
+            <h2>Drop Down Menu</h2>
+            <select id="dropDown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </center>
+    </div>
+
+    <script>
+        let dropDown = document.getElementById("dropDown");
+        dropDown.onchange = function(){
+            console.log(dropDown.value);
+        }
+    </script>
+
+
+    <!-- A button to change the color of Para on Click -->
+
+    <div class="colorswitch">
+    <center>
+        <h2>Color Switch</h2>
+        <button id="colorButton">Change Color</button>
+    </center>
+    </div>
+
+    <script>
+        let colorButton = document.getElementById("colorButton");
+        colorButton.onclick = function(){
+            if(para.style.color == "black"){
+                para.style.color = "red";
+            }
+            else{
+                para.style.color = "black";
+            }
+        }
+    </script>
+
+    <!-- A button to randomize the color of Para on Click -->
+
+    <div class="colorrandom">
+    <center>
+        <h2>Color Random</h2>
+        <div>
+            <p id="p1">Hello World</p>
+        </div>
+          <button id="b1" onclick="randomize()">Click Me!</button>
+    </center>
+    </div>
+
+    <script>
+        function randomize() {
+            document.getElementById('p1').style.color = randomColors();
+          }
+          
+          function randomColors() {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+          }
+    </script>
 
 </body>
 </html>
