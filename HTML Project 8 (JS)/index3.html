@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stopwatch">
+        <p id="time">00:00</p>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+
+    <script>
+        const stopwatch = document.getElementById("stopwatch");
+        const timeDisplay = document.getElementById("time");
+        const startButton = document.getElementById("start");
+        const resetButton = document.getElementById("reset");
+
+        let interval;
+        let seconds = 0;
+        let minutes = 0;
+
+        function startStopwatch() {
+        interval = setInterval(() => {
+            seconds++;
+            if (seconds === 60) {
+            minutes++;
+            seconds = 0;
+            }
+            timeDisplay.textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+        }, 1000);
+        }
+
+        function resetStopwatch() {
+        clearInterval(interval);
+        seconds = 0;
+        minutes = 0;
+        timeDisplay.textContent = "00:00";
+        }
+
+        startButton.addEventListener("click", startStopwatch);
+        resetButton.addEventListener("click", resetStopwatch);
+    </script>
+      
+</body>
+</html>

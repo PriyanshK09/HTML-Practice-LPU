@@ -1,0 +1,21 @@
+#stopwatch {
+    display: flex;
+    align-items: center;
+  }
+  
+  #time {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    background-color: lightgray;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  

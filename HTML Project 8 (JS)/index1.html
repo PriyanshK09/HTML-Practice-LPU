@@ -117,5 +117,47 @@
           }
     </script>
 
+    <!-- Date and Time Clock -->
+    <div class="clock">
+    <center>
+        <h2>Clock</h2>
+        <p id="textToChange"></p>
+    </center>
+    </div>
+    
+    <script>
+        function display()
+        {
+            let date = new Date();
+            console.log(date);
+            textToChange.innerHTML = date;
+        }
+        setInterval(display, 1000);
+    </script>
+
+    <!-- A button to STOP the clock -->
+    
+    <div class="stopclock">
+    <center>
+        <h2>Stop Clock</h2>
+        <p id="textToChange1"></p>
+        <button id="stopButton">Stop</button>
+    </center>
+    </div>
+
+    <script>
+        let stopButton = document.getElementById("stopButton");
+        stopButton.onclick = function(){
+            clearInterval(interval);
+        }
+        function display1()
+        {
+            let date = new Date();
+            console.log(date);
+            textToChange1.innerHTML = date;
+        }
+        let interval = setInterval(display1, 1000);
+    </script>
+
 </body>
 </html>
