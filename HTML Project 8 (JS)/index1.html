@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Printing a message on click -->
+
+    <div class="paragraph">
+    <center>
+        <h2>HTML paragraph</h2>
+        <p id="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <button id="toggleButton">Toggle</button>
+    </center>
+    </div>
+
+    <script>
+        
+        let toggleButton = document.getElementById("toggleButton");
+        let para = document.getElementById("para");
+        
+        toggleButton.onclick = function(){
+            if(para.style.display == "none"){
+                para.style.display = "block";
+            }
+            else{
+                para.style.display = "none";
+            }
+        }
+
+    </script>
+
+    <!-- Printing a loop from 1 to 10 on click -->
+
+    <div class="loop">
+        <center>
+            <h2>Loop</h2>
+            <button id="loopButton">Print</button>  
+        </center>
+    </div>
+
+    <script>
+        let loopButton = document.getElementById("loopButton");
+        loopButton.onclick = function(){
+            for(let i=1; i<=10; i++){
+                console.log(i);
+            }
+        }
+    </script>
+
+    <!--  -->
+
+</body>
+</html>
